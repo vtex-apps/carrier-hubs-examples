@@ -1,0 +1,19 @@
+{
+  "name": "carrier-notifier-example",
+  "vendor": "vtex",
+  "version": "0.1.0",
+  "title": "Use vtex.carrier-notifier as a builder",
+  "description": "Example that use vtex.carrier-notifier as a builder",
+  "categories": [],
+  "dependencies": {},
+  "builders": {
+    "node": "6.x",
+    "vtex.carrier-notifier": "0.x"
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "credentialType": "absolute",
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
