@@ -6,8 +6,8 @@ export async function trackingEvents(ctx: Context, next: () => Promise<any>) {
   console.log(content.length)
 
   ctx.status = 200
-  ctx.body = [
-    {
+  ctx.body = {
+    "OL589419015BR": {
       "deliveredDate": "2020-09-28T16:15:00.0000000-03:00",
       "events": [
         {
@@ -56,7 +56,7 @@ export async function trackingEvents(ctx: Context, next: () => Promise<any>) {
       "hasReturnedToSender": false,
       "isDelivered": true
     }
-  ]
+  }
 
   await next()
 }
