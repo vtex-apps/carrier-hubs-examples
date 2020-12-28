@@ -44,7 +44,7 @@ Notifies the carrier of an order for dispatch. The dispatched packages are sent 
 - Expected output: a map whose keys are the package ids, and the value is an object containing the tracking information and the package notification id.
 ```
 {
-	<id_pacote> : {
+	<packageId> : {
 		"tracking": {
 			"number": string,
 			"url": string

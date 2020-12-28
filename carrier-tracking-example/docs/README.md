@@ -11,7 +11,7 @@ The tracking apps can be called every X minutes, with the request to update the 
 ### vtex.carrier-tracking builder
 Along with the Node or Dotnet builder, the use of the vtex.carrier-tracking builder is what makes the app as a tracking type, and thus be detected by our hub. The steps to use the builder:
 
-1. Add builder vtex.carrier-notifier: 0.x to the list of builders, in the file manifest.json. Ex:
+1. Add builder vtex.carrier-tracking: 0.x to the list of builders, in the file manifest.json. Ex:
 ```
 "builders": {
     "node": "6.x",
@@ -43,7 +43,7 @@ Endpoint called by the hub to obtain the tracking events for a set of tracking c
   }
 ]
 ```
-- Expected output: Expected output: a map whose keys are the package ids, and the value is an object containing the tracking information and the package notification id.
+- Expected output: a map whose keys are the package ids, and the value is an object containing the tracking information and the package notification id.
 ```
 {
   <packageId>: {
