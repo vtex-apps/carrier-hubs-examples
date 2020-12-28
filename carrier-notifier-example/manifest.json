@@ -8,7 +8,8 @@
   "dependencies": {},
   "builders": {
     "node": "6.x",
-    "vtex.carrier-notifier": "0.x"
+    "vtex.carrier-notifier": "0.x",
+    "docs":  "0.x"
   },
   "scripts": {
     "prereleasy": "bash lint.sh"
