@@ -68,8 +68,7 @@ This endpoint is called by the hub to  obtain the tracking events of a series of
 **2. Expected output:** a map whose keys are the package ids, and the value is an object containing the tracking information and the package's `notificationId`.
 ```
 {
-  <packageId>: {
-		"packageId": string,
+  <trackingNumber>: {
     "deliveredDate": Date,
     "events": [
       {

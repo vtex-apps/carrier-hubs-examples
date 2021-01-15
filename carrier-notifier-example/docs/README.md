@@ -64,7 +64,6 @@ The call's response includes all tracking data and each package's ID generated b
 ```
 {
 	"dispatchOrder": DispatchOrder,
-	"account": LicenseManagerAccount,
 	"email": string
 }
 ```

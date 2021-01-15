@@ -59,9 +59,8 @@ This endpoint generates a file that contains one or more labels from the package
 **1.Input sent by the hub**: ([typing details](https://github.com/vtex-apps/carrier-hubs-examples/blob/main/label-emitter-example/node/typings/typings.d.ts#L185))
 ```
 {
-	"account": Account,
-	"packages": Package[],
-	"originAddress": OriginAddress
+	"sender": Account,
+	"packages": Package[]
 }
 ```
 
