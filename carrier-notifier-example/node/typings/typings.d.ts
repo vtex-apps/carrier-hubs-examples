@@ -53,6 +53,7 @@ declare global {
     name: string;
     address: Address;
     email?: any;
+    phone: string;
   }
 
   export interface InvoiceData {
