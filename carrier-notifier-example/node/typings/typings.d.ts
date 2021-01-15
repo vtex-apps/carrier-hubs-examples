@@ -103,6 +103,7 @@ declare global {
     stateRegistration: string;
     email: string;
     phone: string;
+    address: Address;
   }
 
   export interface DispatchOrder
