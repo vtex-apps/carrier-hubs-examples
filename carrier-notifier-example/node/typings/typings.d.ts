@@ -99,6 +99,7 @@ declare global {
 
   export interface JuridicPerson {
     cnpj: string;
+    name: string;
     fantasyName: string;
     stateRegistration: string;
     email: string;
