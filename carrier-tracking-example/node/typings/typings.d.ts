@@ -19,7 +19,6 @@ declare global {
   }
 
   export interface TrackingResponse {
-    trackingNumber: string,
     deliveredDate: Date;
     events: Event[];
     hasReturnedToSender: boolean;
