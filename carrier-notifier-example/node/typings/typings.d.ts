@@ -7,49 +7,6 @@ declare global {
   // We declare a global Context type just to avoid re-writing ServiceContext<Clients, State> in every handler and resolver
   type Context = ServiceContext<Clients, State>
 
-  export interface Sponsor {
-    name: string;
-    email: string;
-    phone?: any;
-  }
-
-  export interface Contact {
-    name: string;
-    email: string;
-    phone?: any;
-  }
-
-  export interface Account {
-    isActive: boolean;
-    id: string;
-    name: string;
-    accountName: string;
-    lv: string;
-    isOperating: boolean;
-    defaultUrl?: any;
-    district?: any;
-    country: string;
-    complement?: any;
-    companyName: string;
-    cnpj: string;
-    haveParentAccount: boolean;
-    parentAccountId?: any;
-    parentAccountName?: any;
-    city?: any;
-    address?: any;
-    logo: string;
-    hasLogo: boolean;
-    number?: any;
-    postalCode?: any;
-    state?: any;
-    telephone?: any;
-    tradingName: string;
-    sponsor: Sponsor;
-    contact: Contact;
-    operationDate: Date;
-    hosts: string[];
-  }
-
   export interface Item {
     id: string;
     name: string;
@@ -68,17 +25,7 @@ declare global {
     name: string;
   }
 
-  export interface Subregion1 {
-    code: string;
-    name: string;
-  }
-
-  export interface Subregion2 {
-    code: string;
-    name: string;
-  }
-
-  export interface Subregion3 {
+  export interface Subregion {
     code: string;
     name: string;
   }
@@ -91,9 +38,9 @@ declare global {
   export interface Address {
     postalCode: string;
     country: Country;
-    subregion1: Subregion1;
-    subregion2: Subregion2;
-    subregion3: Subregion3;
+    subregion1: Subregion;
+    subregion2: Subregion;
+    subregion3: Subregion;
     street: string;
     number: string;
     complement?: any;
@@ -150,30 +97,12 @@ declare global {
     shippingData: ShippingData;
   }
 
-  export interface Country2 {
-    code: string;
-    name: string;
-  }
-
-  export interface Subregion12 {
-    code: string;
-    name: string;
-  }
-
-  export interface Subregion22 {
-    code: string;
-    name: string;
-  }
-
-  export interface Subregion32 {
-    code: string;
-    name: string;
-  }
-
   export interface JuridicPerson {
     cnpj: string;
     fantasyName: string;
     stateRegistration: string;
+    email: string;
+    phone: string;
   }
 
   export interface DispatchOrder
@@ -185,7 +114,6 @@ declare global {
   }
 
   export interface NotificationRequest {
-    account: Account;
     dispatchOrder: DispatchOrder;
     email: string;
   }
