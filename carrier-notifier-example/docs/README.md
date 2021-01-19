@@ -13,7 +13,7 @@ For the integration, carriers should develop VTEX IO apps only for the `Notifica
 - [Notification app model](https://github.com/vtex-apps/carrier-hubs-examples/tree/main/carrier-notifier-example)
 - [Tracking app model](https://github.com/vtex-apps/carrier-hubs-examples/tree/main/carrier-tracking-example)
 
-The app's developement is associated to **API routes** that should also be developed by the carrier for the app to function fully. Check out our [API Reference]() for more details about all API calls.
+The app's developement is associated to **API routes** that should also be developed by the carrier for the app to function fully. Check out our [API Reference](https://developers.vtex.com/vtex-developer-docs/reference/vtex-log-notification-app#vtex-log-notify-carrier-with-app) for more details about all API calls.
 
 ## Notifier App Model
 
@@ -52,7 +52,7 @@ Along with the Node or Dotnet builder, the use of the vtex.carrier-notifier buil
 
 ### Notify Carrier: /notify
 
-> Check out the [API Reference]() for full details.
+> Check out the [API Reference](https://developers.vtex.com/vtex-developer-docs/reference/vtex-log-notification-app#vtex-log-notify-carrier-with-app) for full details.
 
 This endpoint notifies the carrier about a dispatch order by calling the `vtex.carrier-notifier` app. When the call is made, the following data is sent: 
 - Dispatched packages information 

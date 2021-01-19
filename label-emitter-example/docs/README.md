@@ -11,7 +11,7 @@ For the integration, carriers should develop VTEX IO apps only for the `Notifica
 - [Notification app model](https://github.com/vtex-apps/carrier-hubs-examples/tree/main/carrier-notifier-example)
 - [Tracking app model](https://github.com/vtex-apps/carrier-hubs-examples/tree/main/carrier-tracking-example)
 
-The app's developement is associated to **API routes** that should also be developed by the carrier for the app to function fully. Check out our [API Reference]() for more details about all API calls.
+The app's developement is associated to **API routes** that should also be developed by the carrier for the app to function fully. Check out our [API Reference](https://developers.vtex.com/vtex-developer-docs/reference/vtex-log-label-overview?showHidden=51816#undefined) for more details about all API calls.
 
 ## Label Emitter App Model
 
@@ -52,7 +52,7 @@ File format:
 
 #### Emit Label: /labels
 
-> Check out the [API Reference]() for full details.
+> Check out the [API Reference](https://developers.vtex.com/vtex-developer-docs/reference/vtex-log-label-overview?showHidden=51816#undefined) for full details.
 
 This endpoint generates a file that contains one or more labels from the packages sent to the app. This endpoint's response is an url providing access to the generated label file.
 

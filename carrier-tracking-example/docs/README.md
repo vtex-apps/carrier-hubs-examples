@@ -13,7 +13,7 @@ For the integration, carriers should develop VTEX IO apps only for the `Notifica
 - [Notification app model](https://github.com/vtex-apps/carrier-hubs-examples/tree/main/carrier-notifier-example)
 - [Tracking app model](https://github.com/vtex-apps/carrier-hubs-examples/tree/main/carrier-tracking-example)
 
-The app's developement is associated to **API routes** that should also be developed by the carrier for the app to function fully. Check out our [API Reference]() for more details about all API calls.
+The app's developement is associated to **API routes** that should also be developed by the carrier for the app to function fully. Check out our [API Reference](https://developers.vtex.com/vtex-developer-docs/reference/vtex-log-tracking-app#vtex-log-tracking-events-with-app) for more details about all API calls.
 
 ## Tracking App Model
 
@@ -53,7 +53,7 @@ Ex:
 
 #### Tracking Events: /tracking
 
-> Check out the [API Reference]() for full details.
+> Check out the [API Reference](https://developers.vtex.com/vtex-developer-docs/reference/vtex-log-tracking-app#vtex-log-tracking-events-with-app) for full details.
 
 This endpoint is called by the hub to  obtain the tracking events of a series of tracking numbers. The expected response is an object contaning the tracking information and the package's notification ID for every `packageID`.
 
