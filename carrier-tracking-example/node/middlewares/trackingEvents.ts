@@ -1,9 +1,20 @@
 import { json } from 'co-body'
 
 export async function trackingEvents(ctx: Context, next: () => Promise<any>) {
+  const { clients: { google } } = ctx
 
   const content = await json(ctx.req) as TrackingRequest[]
   console.log(content.length)
+
+  //access a external service (remember to add the policy on manifest.json)
+  const googleResponse = await google.Get()
+  console.log(googleResponse != null)
+
+  //access settings by account
+  const appSettings = await ctx.clients.apps.getAppSettings(
+    '' + process.env.VTEX_APP_ID
+  )
+  console.log(appSettings)
 
   ctx.status = 200
   ctx.body = {

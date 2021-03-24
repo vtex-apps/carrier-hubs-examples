@@ -18,6 +18,28 @@
   "billingOptions": {
     "free": true
   },
-  "policies": [],
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "www.google.com",
+        "path": "/"
+      }
+    }
+  ],
+  "settingsSchema": {
+    "title": "Carrier Authentication",
+    "type": "object",
+    "properties": {
+      "user": {
+        "title": "User",
+        "type": "string"
+      },
+      "token": {
+        "title": "Token",
+        "type": "string"
+      }
+    }
+  },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
