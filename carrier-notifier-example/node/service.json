@@ -15,7 +15,8 @@
             "post"
           ],
           "principals": [
-            "vrn:apps:*:{{account}}:{{workspace}}:app/vtex.carrier-notifier@*"
+            "vrn:apps:*:{{account}}:{{workspace}}:app/vtex.carrier-notifier@*",
+            "vrn:vtex.vtex-id:*:{{account}}:*:user/*@vtex.com.br"
           ]
         }
       ]
