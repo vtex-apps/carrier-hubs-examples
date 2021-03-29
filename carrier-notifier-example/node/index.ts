@@ -4,7 +4,6 @@ import {
   Service,
 } from '@vtex/api'
 import { Clients } from './clients'
-import { notfisFile } from './middlewares/notfisFile'
 import { notify } from './middlewares/notifier'
 
 const clients: ClientsConfig<Clients> = {
@@ -24,9 +23,6 @@ export default new Service({
     // `status` is the route ID from service.json. It maps to an array of middlewares (or a single handler).
     notify: method({
       POST: [notify],
-    }),
-    generateNotfis: method({
-      POST: [notfisFile],
-    }),
+    })
   },
 })

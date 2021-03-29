@@ -19,22 +19,6 @@
           ]
         }
       ]
-    },
-    "generateNotfis": {
-      "path": "/notfis",
-      "public": false,
-      "access": "authorized",
-      "policies": [
-        {
-          "effect": "allow",
-          "actions": [
-            "post"
-          ],
-          "principals": [
-            "vrn:apps:*:{{account}}:{{workspace}}:app/vtex.carrier-notifier@*"
-          ]
-        }
-      ]
     }
   }
 }
