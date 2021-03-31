@@ -2,7 +2,7 @@
   "name": "carrier-notifier-example",
   "vendor": "vtex",
   "version": "0.1.0",
-  "title": "Use vtex.carrier-notifier as a builder",
+  "title": "Notifier Example",
   "description": "Example that use vtex.carrier-notifier as a builder",
   "categories": [],
   "dependencies": {},

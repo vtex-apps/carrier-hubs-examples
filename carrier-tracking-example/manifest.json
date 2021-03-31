@@ -2,7 +2,7 @@
   "name": "carrier-tracking-example",
   "vendor": "vtex",
   "version": "0.1.0",
-  "title": "Use vtex.carrier-tracking as a builder",
+  "title": "Tracking Example",
   "description": "Example that use vtex.carrier-tracking as a builder",
   "categories": [],
   "dependencies": {},
