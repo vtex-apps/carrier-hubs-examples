@@ -77,6 +77,14 @@ declare global {
     shippingPolicyName: string;
     shippingPolicyId: string;
     carrierName: string;
+    selectedSla: string;
+    deliveryWindow: DeliveryWindow;
+  }
+
+  export interface DeliveryWindow {
+    startDateUtc: Date;
+    endDateUtc: Date;
+    price: number;
   }
 
   export interface Package {
